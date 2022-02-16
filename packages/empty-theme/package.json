@@ -1,0 +1,22 @@
+{
+  "name": "@wunderfarm/empty-theme",
+  "version": "1.6.2",
+  "description": "An empty theme for debugging",
+  "keywords": [
+    "frontity",
+    "frontity-theme"
+  ],
+  "homepage": "",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "dependencies": {
+    "frontity": "^1.17.0"
+  }
+}
+
