@@ -2,7 +2,7 @@ const settings = {
   "name": "my-first-frontity-project",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
+      "url": process.env.FRONTITY_SOURCE_URL,
       "title": "Test Frontity Blog",
       "description": "WordPress installation for Frontity development"
     }
@@ -19,7 +19,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": process.env.FRONTITY_SOURCE_URL
         }
       }
     },

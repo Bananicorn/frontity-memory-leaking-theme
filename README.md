@@ -4,10 +4,20 @@ This project was bootstrapped with [Frontity](https://frontity.org/).
 
 #### Table of Contents
 
+- [Before you start](#before-you-start)
 - [Launch a development server](#launch-a-development-server)
 - [Create your custom theme](#create-your-custom-theme)
 - [Create a production-ready build](#create-a-production-ready-build)
 - [Deploy](#deploy)
+
+### Before you start
+
+create a .env file which contains something like the following:
+```
+FRONTITY_SOURCE_URL=https://test.frontity.org
+```
+The server you name in here, needs to have the[WP-RESTAPI V2 MENUS](https://wordpress.org/plugins/wp-rest-api-v2-menus/) Plugin installed
+and it needs to have a main menu set.
 
 ### Launch a development server
 

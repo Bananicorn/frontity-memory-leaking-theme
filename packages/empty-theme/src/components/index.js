@@ -1,20 +1,18 @@
 import { connect } from "frontity";
 
 const Theme = ({ state, actions, libraries }) => {
-	const data = state.source.get(state.router.link);
-	const post = state.source[data.type][data.id];
+	const menu = state.source.get('/menu/menu/');
 
-	return data.isReady ? (
+	return menu.isReady ? (
 		<>
-			{data.items && data.items.map(({link, id}) => {
+			<h2>Menu Items:</h2>
+			{menu.items && menu.items.map((item, id) => {
 				return (
-					<>
-						<a href={link} key={id}>{link}</a>
-						<br />
-					</>
+					<div key={id}>
+						<a href={item.url}>{item.title}</a>
+					</div>
 				);
 			})}
-			{!data.items && (<a href="/">home</a>)}
 		</>
 	) : null;
 };
